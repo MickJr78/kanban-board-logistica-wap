@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Card {
+  id           String    @id @default(cuid())
+  cliente      String
+  notasFiscais String[]
+  transportadora String
+  dataColeta   String
+  dataEntrega  String
+  valorNF      Float
+  observacoes  String?
+  fluxo        String
+  etapa        String
+  etiquetas    Json?
+  dataCriacao  DateTime  @default(now())
+  dataAtualizacao DateTime @updatedAt
+  arquivado    Boolean   @default(false)
+  dataArquivado DateTime?
+  historico    Json?
+
+  @@index([fluxo])
+  @@index([etapa])
+  @@index([cliente])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  cardId    String?
+  oldValue  Json?
+  newValue  Json?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([action])
+}

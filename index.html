@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolução do Processo Logístico - WAP</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/wap-logo-png_seeklogo-363772.png">
+</head>
+<body class="dark-theme">
+  <div class="kanban-container">
+    <header class="header">
+      <div class="header-logos">
+        <img src="assets/img/wap-600x600.jpg.webp" alt="WAP" class="logo-img">
+        <img src="assets/img/Logo_WAAW_by_Alok.jpg" alt="WAAW" class="logo-img">
+      </div>
+      <h1 class="header-title">Evolução do Processo Logístico</h1>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn btn-secondary">🌙 Tema</button>
+        <button id="fullscreen-btn" class="btn btn-secondary">🔍 Tela Cheia</button>
+        <button id="export-btn" class="btn btn-secondary">📥 Exportar</button>
+        <button id="new-card-btn" class="btn btn-primary">Novo Card</button>
+        <button id="history-all-btn" class="btn btn-secondary">📋 Histórico Geral</button>
+      </div>
+    </header>
+
+    <main class="fluxos-container">
+      <div class="summary-bar" id="com-veiculo-summary">
+        <div class="summary-content" id="com-veiculo-summary-content"></div>
+      </div>
+      <section class="fluxo-section" id="com-veiculo-section">
+        <h2 class="fluxo-title">Fluxo Com Veículo</h2>
+        <div class="board-columns" id="com-veiculo-columns"></div>
+      </section>
+
+      <section class="fluxo-section" id="sem-veiculo-section">
+        <h2 class="fluxo-title">Fluxo Sem Veículo</h2>
+        <div class="board-columns" id="sem-veiculo-columns"></div>
+      </section>
+      <div class="summary-bar" id="sem-veiculo-summary">
+        <div class="summary-content" id="sem-veiculo-summary-content"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Novo Card</h3>
+        <button id="modal-close" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-footer" id="modal-footer"></div>
+    </div>
+  </div>
+
+  <script src="js/storage-provider.js"></script>
+   <script src="js/repository.js"></script>
+   <script src="js/app.js"></script>
+</body>
+</html>
