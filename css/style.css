@@ -511,14 +511,15 @@ textarea {
 }
 
 .checkbox-group {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
   align-items: center;
+  justify-content: space-between;
 
   /* Fixes checkboxes position to left on card creator/editor modal */
-  justify-items: start;
-  
+  /* justify-items: start; */
+
 
 }
 
