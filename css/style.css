@@ -622,33 +622,40 @@ body.light-theme .history-item {
   gap: 4px;
   flex-wrap: wrap;
   margin-top: 8px;
+  margin-bottom: 4px;
+  width: 30%;
 }
 
 .indicator {
-  border-radius: 50%;
   display: flex;
 }
 
 .indicator.customizacao {
   background: #28a745;
-  width: 16px;
+  width: 50px;
   height: 16px;
+  border-radius: 50%;
 }
 
 .indicator.etiquetaPronta {
   background: #007bff;
-  width: 16px;
+  width: 40px;
   height: 16px;
+  border-radius: 50%;
 }
 
 .indicator.cargaBatida {
   background: #e83e8c;
+  width: 40px;
+  height: 16px;
+  border-radius: 50%;
 }
 
 .indicator.cargaConsolidada {
   background: #ffc107;
-  width: 16px;
+  width: 45px;
   height: 16px;
+  border-radius: 50%;
 }
 
 .card-info {
