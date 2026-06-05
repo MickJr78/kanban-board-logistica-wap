@@ -516,10 +516,10 @@ textarea {
   gap: 6px;
   align-items: center;
 
-  /* Fixes checkboxes position to left */
-  input[type="checkbox"] {
-    margin: 0;
-  }
+  /* Fixes checkboxes position to left on card creator/editor modal */
+  justify-items: start;
+  
+
 }
 
 .checkbox-label {
