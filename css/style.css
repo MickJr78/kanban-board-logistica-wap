@@ -991,3 +991,187 @@ body.light-theme .summary-total {
     font-size: 18px;
   }
 }
+
+/* =========================================================
+   MOBILE - SMARTPHONES
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .kanban-container {
+    padding: 8px;
+  }
+
+  /* Header */
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .header-left {
+    justify-content: center;
+  }
+
+  .header-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 32px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .btn {
+    flex: 1;
+    min-width: 120px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Resumo */
+
+  .summary-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .summary-item,
+  .summary-total {
+    font-size: 12px;
+  }
+
+  /* Fluxos */
+
+  .fluxo-title {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Kanban */
+
+  .board-columns {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .column {
+    min-width: 280px;
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
+
+  .column-header {
+    padding: 10px;
+  }
+
+  .column-title {
+    font-size: 14px;
+  }
+
+  .cards-container {
+    padding: 8px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card-cliente {
+    font-size: 15px;
+  }
+
+  .card-info {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .indicator {
+    width: 14px;
+    height: 14px;
+  }
+
+  .card-btn {
+    font-size: 16px;
+  }
+
+  /* Modais */
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    font-size: 16px; /* evita zoom do iPhone */
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .logo-img {
+    height: 26px;
+  }
+
+  .column {
+    min-width: 240px;
+    max-width: 240px;
+  }
+
+  .card-cliente {
+    font-size: 14px;
+  }
+
+  .card-info {
+    font-size: 11px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .summary-item,
+  .summary-total {
+    font-size: 11px;
+  }
+}
