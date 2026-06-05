@@ -625,18 +625,20 @@ body.light-theme .history-item {
 }
 
 .indicator {
-  width: 16px;
-  height: 16px;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
 }
 
 .indicator.customizacao {
   background: #28a745;
+  width: 16px;
+  height: 16px;
 }
 
 .indicator.etiquetaPronta {
   background: #007bff;
+  width: 16px;
+  height: 16px;
 }
 
 .indicator.cargaBatida {
@@ -645,6 +647,8 @@ body.light-theme .history-item {
 
 .indicator.cargaConsolidada {
   background: #ffc107;
+  width: 16px;
+  height: 16px;
 }
 
 .card-info {
