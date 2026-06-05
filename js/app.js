@@ -870,3 +870,21 @@ function showAllHistoryModal() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+
+// Order cards by shipping date (dataEntrega) within each column
+
+function orderCardsByShippingDate(cards) {
+  const columns = {};
+  cards.forEach(card => {
+    const key = `${card.fluxo}-${card.etapa}`;
+    if (!columns[key]) columns[key] = [];
+    columns[key].push(card);
+  });
+
+  Object.values(columns).forEach(columnCards => {
+    columnCards.sort((a, b) => new Date(a.dataEntrega) - new Date(b.dataEntrega));
+  });
+  return cards;
+}
+
