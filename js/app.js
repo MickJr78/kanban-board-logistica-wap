@@ -871,7 +871,6 @@ function showAllHistoryModal() {
 
 document.addEventListener('DOMContentLoaded', init);
 
-
 // Order cards by collect date (dataColeta) within each column, oldest to newest
 
 function orderCardsByCollectDate(cardsData) {

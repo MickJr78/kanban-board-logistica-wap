@@ -515,6 +515,11 @@ textarea {
   grid-template-columns: 1fr 1fr;
   gap: 6px;
   align-items: center;
+
+  /* Fixes checkboxes position to left */
+  input[type="checkbox"] {
+    margin: 0;
+  }
 }
 
 .checkbox-label {
