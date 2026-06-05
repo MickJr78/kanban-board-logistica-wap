@@ -872,19 +872,18 @@ function showAllHistoryModal() {
 document.addEventListener('DOMContentLoaded', init);
 
 
-// Order cards by shipping date (dataEntrega) within each column
+// Order cards by collect date (dataColeta) within each column, oldest to newest
 
-function orderCardsByShippingDate(cards) {
+function orderCardsByCollectDate(cardsData) {
   const columns = {};
-  cards.forEach(card => {
+  cardsData.forEach(card => {
     const key = `${card.fluxo}-${card.etapa}`;
     if (!columns[key]) columns[key] = [];
     columns[key].push(card);
   });
 
   Object.values(columns).forEach(columnCards => {
-    columnCards.sort((a, b) => new Date(a.dataEntrega) - new Date(b.dataEntrega));
+    columnCards.sort((a, b) => new Date(a.dataColeta) - new Date(b.dataColeta));
   });
-  return cards;
+  return cardsData;
 }
-
