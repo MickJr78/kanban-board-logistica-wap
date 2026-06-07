@@ -612,7 +612,7 @@ body.light-theme .history-item {
 }
 
 .card-indicators {
-  display: flex;
+  display: inline-flex;
   gap: 4px;
   flex-wrap: wrap;
   margin-top: 8px;
