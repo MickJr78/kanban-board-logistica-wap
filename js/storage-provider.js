@@ -101,24 +101,3 @@ class ExportService {
 }
 
 window.ExportService = ExportService;
-
-// Selects the preferred server to update data, with fallback to localStorage
-class StorageProvider {
-  constructor() {
-    this.storage = window.indexedDbStorage; // Future-proofing for IndexedDB
-  }
-  async getCards() {
-    try {
-      return await this.storage.getAll();
-    } catch (error) {
-      console.error('Error fetching cards:', error);
-      return [];
-    }
-  }
-}
-
-window.storageProvider = new StorageProvider();
-
-
-
-

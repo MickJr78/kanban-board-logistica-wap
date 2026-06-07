@@ -870,19 +870,3 @@ function showAllHistoryModal() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
-
-// Order cards by collect date (dataColeta) within each column, oldest to newest
-
-function orderCardsByCollectDate(cardsData) {
-  const columns = {};
-  cardsData.forEach(card => {
-    const key = `${card.fluxo}-${card.etapa}`;
-    if (!columns[key]) columns[key] = [];
-    columns[key].push(card);
-  });
-
-  Object.values(columns).forEach(columnCards => {
-    columnCards.sort((a, b) => new Date(a.dataColeta) - new Date(b.dataColeta));
-  });
-  return cardsData;
-}
