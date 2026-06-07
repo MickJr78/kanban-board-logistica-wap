@@ -511,16 +511,10 @@ textarea {
 }
 
 .checkbox-group {
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
   align-items: center;
-  justify-content: space-between;
-
-  /* Fixes checkboxes position to left on card creator/editor modal */
-  /* justify-items: start; */
-
-
 }
 
 .checkbox-label {
@@ -622,40 +616,29 @@ body.light-theme .history-item {
   gap: 4px;
   flex-wrap: wrap;
   margin-top: 8px;
-  margin-bottom: 4px;
-  width: 30%;
 }
 
 .indicator {
-  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .indicator.customizacao {
   background: #28a745;
-  width: 50px;
-  height: 16px;
-  border-radius: 50%;
 }
 
 .indicator.etiquetaPronta {
   background: #007bff;
-  width: 40px;
-  height: 16px;
-  border-radius: 50%;
 }
 
 .indicator.cargaBatida {
   background: #e83e8c;
-  width: 40px;
-  height: 16px;
-  border-radius: 50%;
 }
 
 .indicator.cargaConsolidada {
   background: #ffc107;
-  width: 45px;
-  height: 16px;
-  border-radius: 50%;
 }
 
 .card-info {
@@ -841,10 +824,11 @@ body.light-theme .summary-total {
  .offline-banner.hidden {
    display: none;
  }
-/* =========================================================
+
+ /* =========================================================
    TELAS CORPORATIVAS / TVS 42"+ / 2K / 4K
    ========================================================= */
-/*
+
 @media screen and (min-width: 2560px) {
 
   .kanban-container {
@@ -1192,4 +1176,3 @@ body.light-theme .summary-total {
     font-size: 11px;
   }
 }
-*/
