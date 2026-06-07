@@ -844,7 +844,7 @@ body.light-theme .summary-total {
 /* =========================================================
    TELAS CORPORATIVAS / TVS 42"+ / 2K / 4K
    ========================================================= */
-
+/*
 @media screen and (min-width: 2560px) {
 
   .kanban-container {
@@ -1192,3 +1192,4 @@ body.light-theme .summary-total {
     font-size: 11px;
   }
 }
+*/
