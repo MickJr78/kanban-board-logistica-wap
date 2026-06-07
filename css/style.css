@@ -614,7 +614,7 @@ body.light-theme .history-item {
 .card-indicators {
   display: inline-block;
   gap: 4px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 8px;
 }
 
